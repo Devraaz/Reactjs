@@ -14,7 +14,7 @@ const Navbar = () => {
         <>
             <nav className='border h-15 w-screen p-1 px-8 flex justify-between items-center '>
                 <div className="logo">
-                    <img src={logo} alt="logo" class="" />
+                    <img src={logo} alt="logo" />
                 </div>
                 <div className="hidden sm:flex flex-row space-x-5">
                     <a href="/" className='font-medium text-md text-slate-600 hover:text-slate-950'>Home</a>
@@ -31,7 +31,7 @@ const Navbar = () => {
                 </button>
             </nav>
 
-            <div className="bg-slate-300 w-96 h-screen space-y-8 p-5 absolute right-0 pt-14 z-10 sm:hidden transition-all"  style={{ top: menu ? '0px' : '-1000px'}}>
+            <div className="bg-slate-300 w-96 h-screen space-y-8 p-5 fixed  right-0 pt-14 z-10 sm:hidden transition-all duration-1000"  style={{ top: menu ? '0px' : '-1000px'}}>
                 <BsBellSlash className=" text-slate-800 absolute right-8 top-6"  onClick={openMenu} />
                 <div className=" flex flex-col space-y-5">
                     <a href="/" className='font-medium text-md text-slate-600 hover:text-slate-950 w-fit'>Home</a>
